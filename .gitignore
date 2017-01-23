@@ -22,6 +22,9 @@ syntax:glob
 [Dd]ebug*/
 *.lib
 *.sbr
+*.vcxproj
+*.vcxproj.filters
+*.Project.opensdf
 Thumbs.db
 [Ll]ib/
 [Rr]elease*/
