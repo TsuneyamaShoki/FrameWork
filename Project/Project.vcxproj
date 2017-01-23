@@ -10,6 +10,15 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Assets\Sauce\DrFrameWork\Utility\DrTypeArray.h" />
+    <ClInclude Include="Assets\Sauce\DrFrameWork\Utility\DrTypeCmn.h" />
+    <ClInclude Include="Assets\Sauce\DrFrameWork\Window\DrWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Assets\Sauce\DrFrameWork\Window\DrEntryPoint_Win.cpp" />
+    <ClCompile Include="Assets\Sauce\DrFrameWork\Window\DrWindow.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A952BB98-E54B-485C-BC8B-10F3624DF1E7}</ProjectGuid>
     <RootNamespace>Project</RootNamespace>
@@ -63,12 +72,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="DrTypeCmn.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="DrEntryPoint_Win.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

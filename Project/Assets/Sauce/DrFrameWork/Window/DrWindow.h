@@ -1,6 +1,6 @@
 
 #include <Windows.h>
-#include "DrTypeArray.h"
+#include "../Utility/DrTypeArray.h"
 class DrWindow
 {
 #pragma region //private:

@@ -1,5 +1,5 @@
 #include <Windows.h>
-#include "DrTypeCmn.h"
+#include "DrWindow.h"
 
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE 	hPrevInstance, LPSTR lpszArgs, DrInt nWinMode)
 {

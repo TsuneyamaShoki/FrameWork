@@ -13,15 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\DrFramework">
+      <UniqueIdentifier>{fc497148-0f36-4b02-9826-dc103b39e871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Window">
+      <UniqueIdentifier>{18c3cb81-436f-4912-9bdf-5dd0a349f108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Utility">
+      <UniqueIdentifier>{168ac0b5-ef84-407f-b2c4-1f0eb2423b68}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DrTypeCmn.h">
-      <Filter>ソース ファイル</Filter>
+    <ClInclude Include="Assets\Sauce\DrFrameWork\Utility\DrTypeCmn.h">
+      <Filter>ソース ファイル\DrFramework\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\DrFrameWork\Utility\DrTypeArray.h">
+      <Filter>ソース ファイル\DrFramework\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\DrFrameWork\Window\DrWindow.h">
+      <Filter>ソース ファイル\DrFramework\Window</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DrEntryPoint_Win.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="Assets\Sauce\DrFrameWork\Window\DrWindow.cpp">
+      <Filter>ソース ファイル\DrFramework\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\DrFrameWork\Window\DrEntryPoint_Win.cpp">
+      <Filter>ソース ファイル\DrFramework</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
