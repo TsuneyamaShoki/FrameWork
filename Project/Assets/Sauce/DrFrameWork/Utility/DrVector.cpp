@@ -1,3 +1,4 @@
+
 #include "DrVector.h"
  
 #pragma region // ! DrVector2
@@ -233,11 +234,6 @@ FLOAT DrVector3::Length()const
 	return (vLength.m128_f32[0]);
 }
 
-DrVector3& DrVector3::Normalize()
-{
-	*this = Normalized();
-	return *this;
-}
 DrVector3 DrVector3::Normalized()const
 {
 	return DrVector3(XMVector3Normalize(ToXMVECTOR()));
@@ -268,6 +264,151 @@ DrF32 DrVector3::CrossingAngle(DrVector3 v0, DrVector3 v1)
 }
 #pragma endregion
 
-
 #pragma region // ! DrVector4
+
+// ! staticMembers
+const DrVector4 DrVector4::zero = DrVector4(0, 0, 0);
+const DrVector4 DrVector4::one = DrVector4(1, 1, 1);
+const DrVector4 DrVector4::up = DrVector4(0, 1, 0);
+const DrVector4 DrVector4::down = DrVector4(0, -1, 0);
+const DrVector4 DrVector4::left = DrVector4(-1, 0, 0);
+const DrVector4 DrVector4::right = DrVector4(1, 0, 0);
+const DrVector4 DrVector4::front = DrVector4(0, 0, 1);
+const DrVector4 DrVector4::back = DrVector4(0, 0, -1);
+
+// ! operators
+DrVector4& DrVector4::operator = (const XMVECTOR& Float4)
+{
+	this->x = Float4.m128_f32[0];
+	this->y = Float4.m128_f32[1];
+	this->z = Float4.m128_f32[2];
+	this->w = Float4.m128_f32[3];
+	return *this;
+}
+DrVector4& DrVector4::operator= (const XMFLOAT3& Float3)
+{
+	this->x = Float3.x;
+	this->y = Float3.y;
+	this->z = Float3.z;
+	this->w = 0;
+	return *this;
+}
+DrVector4  DrVector4::operator+ (const XMFLOAT4& Float4)const
+{
+	return DrVector4(x + Float4.x, y + Float4.y, z + Float4.z, w + Float4.w);
+}
+DrVector4  DrVector4::operator- (const XMFLOAT4& Float4)const
+{
+	return DrVector4(x - Float4.x, y - Float4.y, z - Float4.z, w - Float4.w);
+}
+DrVector4  DrVector4::operator* (FLOAT Float)const
+{
+	return DrVector4(x * Float, y * Float, z * Float, w * Float);
+}
+DrVector4  DrVector4::operator/ (FLOAT Float)const
+{
+	return DrVector4(x / Float, y / Float, z / Float, w / Float);
+}
+DrVector4& DrVector4::operator+= (const XMFLOAT4& Float4)
+{
+	x += Float4.x;
+	y += Float4.y;
+	z += Float4.z;
+	w += Float4.w;
+	return *this;
+}
+DrVector4& DrVector4::operator-= (const XMFLOAT4& Float4)
+{
+	x -= Float4.x;
+	y -= Float4.y;
+	z -= Float4.z;
+	w -= Float4.w;
+	return *this;
+}
+DrVector4& DrVector4::operator*= (FLOAT Float)
+{
+	x *= Float;
+	y *= Float;
+	z *= Float;
+	w *= Float;
+	return *this;
+}
+DrVector4& DrVector4::operator/= (FLOAT Float)
+{
+	x /= Float;
+	y /= Float;
+	z /= Float;
+	w /= Float;
+	return *this;
+}
+DrVector4  DrVector4::operator*(const DrMatrix& mat)
+{
+	return DrVector4(XMVector4Transform(ToXMVECTOR(), mat.ToXMMATRIX()));
+}
+DrVector4& DrVector4::operator*=(const DrMatrix& mat)
+{
+	return *this = *this * mat;
+}
+DrBool DrVector4::operator==(const DrVector4& value)const
+{
+	return	x == value.x &&
+		y == value.y &&
+		z == value.z &&
+		w == value.w;
+}
+DrBool DrVector4::operator!=(const DrVector4& value)const
+{
+	return !(*this == value);
+}
+DrBool DrVector4::operator>=(const DrVector4& value)const
+{
+	return x >= value.x && y >= value.y && z >= value.z;
+}
+DrBool DrVector4::operator<=(const DrVector4& value)const
+{
+	return x <= value.x && y <= value.y && z <= value.z;
+}
+DrBool DrVector4::operator>(const DrVector4& value)const
+{
+	return x > value.x && y > value.y && z > value.z;
+}
+DrBool DrVector4::operator<(const DrVector4& value)const
+{
+	return x < value.x && y < value.y && z >value.z;
+}
+
+//! XMVECTORéÊìæ
+XMVECTOR DrVector4::ToXMVECTOR()const
+{
+	return XMLoadFloat4(this);
+}
+
+//! í∑Ç≥éÊìæ
+FLOAT DrVector4::Length()const
+{
+	XMVECTOR vLength = XMVector2Length(ToXMVECTOR());
+	return (vLength.m128_f32[0] +
+		vLength.m128_f32[1] +
+		vLength.m128_f32[2] +
+		vLength.m128_f32[3]);
+}
+
+//! ê≥ãKâªéÊìæ
+DrVector4 DrVector4::Normalized()const
+{
+	return DrVector4(XMVector4Normalize(ToXMVECTOR()));
+}
+
+// ! ì‡ê”éÊìæ
+FLOAT DrVector4::Dot(DrVector4 v0,DrVector4 v1)
+{
+	return XMVector4Dot(v0.ToXMVECTOR(), v1.ToXMVECTOR()).m128_f32[0];
+}
+
+// ! äOêœéÊìæ
+DrVector4 DrVector4::Closs(DrVector4 v0,DrVector4 v1)
+{
+	return DrVector3(XMVector3Cross(v0.ToXMVECTOR(), v1.ToXMVECTOR()));
+}
+
 #pragma endregion
