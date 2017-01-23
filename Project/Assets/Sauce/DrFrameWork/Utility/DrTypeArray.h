@@ -1,6 +1,6 @@
 ﻿
 #pragma once
-#include "DrTypeCmn.h"
+#include "DrTypeCommons.h"
 
 template<typename Type>
 class DrArrayType2
