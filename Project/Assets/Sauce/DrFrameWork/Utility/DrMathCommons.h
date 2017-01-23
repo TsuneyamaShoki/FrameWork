@@ -1,22 +1,25 @@
 #pragma once
 
+//! Include
 #include "DrTypeCommons.h"
 
 //! Pi
-#define TS_PI (3.14159265359f)
+#define DR_PI (3.14159265359f)
+
+//! InlineFunction
 
 //! degree -> radian
 template<typename T>
 inline T DrToRadian(const T& degree)
 {
-	return degree * TS_PI / 180.0f;
+	return degree * DR_PI / 180.0f;
 }
 
 //! radian -> degree
 template<typename T>
 inline T DrToDegree(const T& radian)
 {
-	return radian * 180.0f / TS_PI;
+	return radian * 180.0f / DR_PI;
 }
 
 //! ’l‚ğ min ~ max@‚Éİ’è
@@ -58,6 +61,6 @@ inline T DrQubic(const T& a, const T&b, DrF32 t)
 inline DrF32 Gaussian(float x, float mean, float deviation)
 {
 	return
-		(1.0f / sqrt(2.0f * TS_PI * deviation * deviation))
+		(1.0f / sqrt(2.0f * DR_PI * deviation * deviation))
 		* expf((-((x - mean) * (x - mean))) / (2.0f * deviation * deviation));
 }

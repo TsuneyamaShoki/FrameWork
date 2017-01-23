@@ -1,5 +1,6 @@
 #pragma once
 
+//! Include
 #include "../../Extern/xna/Xna.h"
 #include "DrTypeCommons.h"
 
@@ -60,6 +61,7 @@ public:
 	
 	// ! ³‹K‰»æ“¾
 	DrVector2  Normalized() const;
+	DrVector2& Normalize();
 
 	// ! “àÏ
 	static DrF32 Dot(DrVector2 v0,DrVector2 v1);
@@ -122,7 +124,7 @@ public:
 #pragma endregion
 
 	//! TransformCoodæ“¾
-	DrVector3& TransformCood(const DrMatrix& mat)const;
+	DrVector3& TransformCood(const DrMatrix& mat);
 	
 	//! XMVECTORæ“¾
 	XMVECTOR  ToXMVECTOR()const;
@@ -132,6 +134,7 @@ public:
 	
 	//! ³‹K‰»æ“¾
 	DrVector3  Normalized()const;
+	DrVector3& Normalize();
 
 	//! “àÏæ“¾
 	static DrF32 Dot(DrVector3 v0,DrVector3 v1);
@@ -227,6 +230,7 @@ public:
 
 	//! ³‹K‰»æ“¾
 	DrVector4  Normalized()const;
+	DrVector4& Normalize();
 
 	//! “àÏæ“¾
 	static DrF32 Dot(DrVector4 v0,DrVector4 v1);

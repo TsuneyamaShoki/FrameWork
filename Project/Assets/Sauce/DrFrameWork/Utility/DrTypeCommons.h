@@ -1,7 +1,9 @@
 #pragma once
 
+//! Include
 #include <string>
 
+//! type
 typedef unsigned int        DrUint;
 typedef int                 DrInt;
 typedef float               Drfloat;

@@ -89,7 +89,7 @@ DrInt2 DrWindow::GetWindowSize()
 }
 
 //! アスペクト比取得
-// !Todo
+//! Todo
 DrF32 DrWindow::GetAspect()
 {
 	return 0.f;
@@ -113,6 +113,7 @@ LRESULT CALLBACK DefaultWindowProc(HWND hWnd,
 }
 
 //! 解放
+//! Todo
 DrWindow::~DrWindow()
 {
 

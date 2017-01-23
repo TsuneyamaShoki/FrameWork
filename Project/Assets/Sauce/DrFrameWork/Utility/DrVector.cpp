@@ -1,6 +1,9 @@
 
+//! Include
+#include "DrMathCommons.h"
 #include "DrVector.h"
- 
+#include "DrMatrix.h"
+
 #pragma region // ! DrVector2
 
 // ! staticMember
@@ -76,32 +79,33 @@ DrBool DrVector2::operator<(const DrVector2& value)const
 	return x < value.x && y < value.y;
 }
 
-// ! XMVECTORéÊìæ
 XMVECTOR DrVector2::ToXMVECTOR()const
 {
 	return XMLoadFloat2(this);
 }
 
-// ! í∑Ç≥éÊìæ
 FLOAT DrVector2::Length()const
 {
 	XMVECTOR vLength = XMVector2Length(ToXMVECTOR());
 	return (vLength.m128_f32[0] + vLength.m128_f32[1]);
 }
 
-// ! ê≥ãKâªéÊìæ
 DrVector2 DrVector2::Normalized()const
 {
 	return DrVector2(XMVector2Normalize(ToXMVECTOR()));
 }
 
-// ! ì‡êœ
+DrVector2& DrVector2::Normalize()
+{
+	*this = Normalized();
+	return *this;
+}
+
 FLOAT DrVector2::Dot(DrVector2 v0, DrVector2 v1)
 {
 	return XMVector2Dot(v0.ToXMVECTOR(), v1.ToXMVECTOR()).m128_f32[0];
 }
 
-// ! äOêœ
 DrVector2 DrVector2::Closs(DrVector2 v0, DrVector2 v1)
 {
 	return DrVector2(XMVector2Cross(v0.ToXMVECTOR(), v1.ToXMVECTOR()));
@@ -218,9 +222,9 @@ DrBool DrVector3::operator<(const DrVector3& value)const
 }
 
 
-DrVector3& DrVector3::TransformCood(const DrMatrix& mat)const
+DrVector3& DrVector3::TransformCood(const DrMatrix& mat)
 {
-	return 	XMVector3TransformCoord(ToXMVECTOR(), mat.ToXMMATRIX());
+	return 	*this = XMVector3TransformCoord(ToXMVECTOR(), mat.ToXMMATRIX());
 }
 
 XMVECTOR DrVector3::ToXMVECTOR()const
@@ -237,6 +241,12 @@ FLOAT DrVector3::Length()const
 DrVector3 DrVector3::Normalized()const
 {
 	return DrVector3(XMVector3Normalize(ToXMVECTOR()));
+}
+
+DrVector3& DrVector3::Normalize()
+{
+	*this = Normalized();
+	return *this;
 }
 
 FLOAT DrVector3::Dot(DrVector3 v0, DrVector3 v1)
@@ -377,13 +387,11 @@ DrBool DrVector4::operator<(const DrVector4& value)const
 	return x < value.x && y < value.y && z >value.z;
 }
 
-//! XMVECTORéÊìæ
 XMVECTOR DrVector4::ToXMVECTOR()const
 {
 	return XMLoadFloat4(this);
 }
 
-//! í∑Ç≥éÊìæ
 FLOAT DrVector4::Length()const
 {
 	XMVECTOR vLength = XMVector2Length(ToXMVECTOR());
@@ -393,19 +401,22 @@ FLOAT DrVector4::Length()const
 		vLength.m128_f32[3]);
 }
 
-//! ê≥ãKâªéÊìæ
 DrVector4 DrVector4::Normalized()const
 {
 	return DrVector4(XMVector4Normalize(ToXMVECTOR()));
 }
 
-// ! ì‡ê”éÊìæ
+DrVector4& DrVector4::Normalize()
+{
+	*this = Normalized();
+	return *this;
+}
+
 FLOAT DrVector4::Dot(DrVector4 v0,DrVector4 v1)
 {
 	return XMVector4Dot(v0.ToXMVECTOR(), v1.ToXMVECTOR()).m128_f32[0];
 }
 
-// ! äOêœéÊìæ
 DrVector4 DrVector4::Closs(DrVector4 v0,DrVector4 v1)
 {
 	return DrVector3(XMVector3Cross(v0.ToXMVECTOR(), v1.ToXMVECTOR()));
