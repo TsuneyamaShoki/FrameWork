@@ -2,8 +2,8 @@
 #pragma once
 
 //! Include
-#include "../../Extern/xna/Xna.h"
-#include "DrTypeCommons.h"
+#include "../../../Extern/xna/Xna.h"
+#include "../Main/DrTypeCommons.h"
 
 class DrVector3;
 class DrVector4;

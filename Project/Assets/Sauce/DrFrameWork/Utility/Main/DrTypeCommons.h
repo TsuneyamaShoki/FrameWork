@@ -2,7 +2,10 @@
 
 //! Include
 #include <string>
-
+#include <list>
+#include <vector>
+#include <stack>
+#include <map>
 //! type
 typedef unsigned int        DrUint;
 typedef int                 DrInt;
@@ -27,7 +30,7 @@ typedef unsigned long long  DrU64;
 typedef float               DrF32;
 typedef double              DrF64;
 
-typedef DrU64				DrHash;
+typedef DrU64				DR_HASH;
 
 #if USE_EASTL
 #define tstl               eastl
