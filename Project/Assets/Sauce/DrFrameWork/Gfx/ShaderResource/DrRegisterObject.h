@@ -2,7 +2,7 @@
 #pragma once
 
 //! Include
-#include "../../Utility/DrTypeCommons.h"
+#include "../../Utility/DrMainUtility.h"
 
 //! [class] レジスタ番号を所持しているオブジェクト
 class DrRegisterResource
