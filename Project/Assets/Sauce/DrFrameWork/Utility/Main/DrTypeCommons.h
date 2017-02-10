@@ -6,6 +6,7 @@
 #include <vector>
 #include <stack>
 #include <map>
+#include <memory>
 //! type
 typedef unsigned int        DrUint;
 typedef int                 DrInt;
@@ -41,7 +42,9 @@ typedef DrU64				DR_HASH;
 #define DrList              tstl::list
 #define DrVector            tstl::vector
 #define DrStack             tstl::stack
-
+#define DrUniquePtr			std::unique_ptr
+#define DrSharedPtr			std::shared_ptr
+#define DrWeakPtr			std::weak_ptr
 #define DrMap               std::unordered_map
 
 #define DR_TRUE             true
