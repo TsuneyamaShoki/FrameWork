@@ -3,7 +3,7 @@
 #include "../Main/DrTypeArray.h"
 //! [class] Staticのリストを作成するインターフェイス
 template<class T>
-class IDrStaticNameObjectList
+class IDrStaticNamedList
 {
 #pragma region //private
 
@@ -28,13 +28,13 @@ private:
 #pragma endregion
 public:
 	//! コンストラクタ
-	IDrStaticNameObjectList()
+	IDrStaticNamedList()
 	{
 		AddObject(static_cast<T*>(this));
 	}
 
 	//! デストラクタ
-	virtual ~IDrStaticNameObjectList()
+	virtual ~IDrStaticNamedList()
 	{
 		RemoveObject((T*) this);
 	}
@@ -69,4 +69,4 @@ public:
 
 //! インターフェースを継承したクラスのcppに追加する必要がある。
 #define DR_INSTANTIATE_NAME_OBJ_LIST( type )\
-	DrList<type*> IDrStaticNameObjectList<type>::m_objectList;
+	DrList<type*> IDrStaticNamedList<type>::m_objectList;

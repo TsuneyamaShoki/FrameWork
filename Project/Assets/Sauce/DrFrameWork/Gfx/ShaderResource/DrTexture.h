@@ -61,13 +61,13 @@ public:
 class DrTexture2D : public DrTexture
 {
 protected:
-	ID3D11Texture2D * m_tex1d;
+	ID3D11Texture2D * m_tex2d;
 public:
 	DrTexture2D() :DrTexture(){};
 
 	virtual ~DrTexture2D()
 	{
-		DrSafeRelease(m_tex1d);
+		DrSafeRelease(m_tex2d);
 	};
 };
 
@@ -75,12 +75,12 @@ public:
 class DrTexture3D : public DrTexture
 {
 protected:
-	ID3D11Texture3D * m_tex1d;
+	ID3D11Texture3D * m_tex3d;
 public:
 	DrTexture3D() :DrTexture(){};
 
 	virtual ~DrTexture3D()
 	{
-		DrSafeRelease(m_tex1d);
+		DrSafeRelease(m_tex3d);
 	};
 };

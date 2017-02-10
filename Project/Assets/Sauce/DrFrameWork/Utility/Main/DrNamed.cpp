@@ -24,7 +24,7 @@ DrString DrNamed::ClassName()
 	return str;
 }
 
-//ハッシュコードの取得
+//! ハッシュコードの取得
 DR_HASH DrNamed::GetHashCode()
 {
 	return m_hashCode;
