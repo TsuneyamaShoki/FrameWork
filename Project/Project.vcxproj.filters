@@ -22,24 +22,365 @@
     <Filter Include="ソース ファイル\DrFramework\Utility">
       <UniqueIdentifier>{168ac0b5-ef84-407f-b2c4-1f0eb2423b68}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Extern">
+      <UniqueIdentifier>{bac101fe-eb30-472f-b32a-bf9b0f779f16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Extern\DirectXTex">
+      <UniqueIdentifier>{d7bc73d0-787b-40b5-968d-759be4c432fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Extern\XML">
+      <UniqueIdentifier>{02b02cf5-3a02-48d3-a496-a5d0f6871948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Extern\xna">
+      <UniqueIdentifier>{722c02d6-1fd6-4427-8455-565fe65d5e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Core">
+      <UniqueIdentifier>{ef00ca5f-c8ed-4440-8fb3-38bf73d8706d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Core\Header">
+      <UniqueIdentifier>{d217c968-a4c8-470b-a46d-2d4f1f943233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx">
+      <UniqueIdentifier>{43754c69-3477-4bc4-8e30-f920c33386b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\ShaderResouce">
+      <UniqueIdentifier>{13efae9e-8b8a-4e51-a200-55e9c72b8efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Utility\Math">
+      <UniqueIdentifier>{7e7323d4-0a20-4f2a-b25c-2d7227301f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Utility\Math\Header">
+      <UniqueIdentifier>{4dc5575b-cb5f-481e-a6b9-23ddc97f3062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Core\Sourse">
+      <UniqueIdentifier>{4ec0ad35-75c6-4426-bcde-e78cac91d80a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Utility\Math\Sourse">
+      <UniqueIdentifier>{58a65639-2371-40fb-81f5-131e995d95f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\Device">
+      <UniqueIdentifier>{c393ce79-46e4-4ca3-a693-0faa8248f84f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Utility\Main">
+      <UniqueIdentifier>{9208deb9-a774-4e28-8472-41458729d45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Utility\Main\Header">
+      <UniqueIdentifier>{257ac778-3aae-4fc3-a39f-131f8dc7c3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Utility\Main\Source">
+      <UniqueIdentifier>{de1f4fa6-2930-4531-b58d-a008cf0090b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Utility\Interface">
+      <UniqueIdentifier>{0a594fda-add2-4811-9943-f529d9b5bd2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\ShaderResouce\Header">
+      <UniqueIdentifier>{9b504fc7-4251-4b61-9fc8-57fb0e9d2647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\ShaderResouce\Source">
+      <UniqueIdentifier>{5d176fd0-5dce-4917-abcd-caa27bd90e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\Device\Header">
+      <UniqueIdentifier>{f07ad01c-eda6-448e-84d3-d06fa3518cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\Device\Source">
+      <UniqueIdentifier>{8d48b2bd-2e96-4e6e-a7db-8bad02330a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Memory">
+      <UniqueIdentifier>{944c42ce-6a64-46ff-a68d-900bbc8426a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\Shader">
+      <UniqueIdentifier>{9b87f445-6b88-42f0-ba97-d23d9a7967e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\Shader\Header">
+      <UniqueIdentifier>{adf9f9c5-e3da-47d2-bcd1-17bd27eff9d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\Shader\Source">
+      <UniqueIdentifier>{4fdbac8c-9370-4ddb-a761-93dafca8c5e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\BufferResource">
+      <UniqueIdentifier>{f83fcf5e-98ba-4fa6-90f4-a44e31a51924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\BufferResource\Header">
+      <UniqueIdentifier>{0c254bd9-62aa-4cca-a342-98d10c21789c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\DrFramework\Gfx\BufferResource\Source">
+      <UniqueIdentifier>{f69a3d10-7bc2-4481-b2e5-ea32f3c98007}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Assets\Sauce\DrFrameWork\Utility\DrTypeCmn.h">
+    <ClInclude Include="Assets\Sauce\Extern\DirectXTex\BC.h">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\DirectXTex\BCDirectCompute.h">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\DirectXTex\DDS.h">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\DirectXTex\DirectXTex.h">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\DirectXTex\DirectXTexP.h">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\DirectXTex\Filters.h">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\DirectXTex\scoped.h">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\DirectXTex\WICTextureLoader.h">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\XML\tinyxml2.h">
+      <Filter>ソース ファイル\Extern\xna</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\xna\Xna.h">
+      <Filter>ソース ファイル\Extern\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Sauce\Extern\xna\xnamath.h">
+      <Filter>ソース ファイル\Extern\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\Device\DrDeviceContext.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\Device\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\Device\DrDevice.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\Device\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\Shader\DrShader.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\Shader\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\Shader\DrShaderEffect.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\Shader\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\Shader\DrShaderUtility.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\Shader\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\ShaderResource\DrShaderResourceDesc.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\ShaderResouce\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\ShaderResource\DrTexture.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\ShaderResouce\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\ShaderResource\DrRegisterObject.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\ShaderResouce\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\ShaderResource\DrRenderTarget.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\ShaderResouce\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Memory\DrTLSFMemoryAllocator.h">
+      <Filter>ソース ファイル\DrFramework\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Interface\IDrStaticNamedList.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Main\DrTypeCommons.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Main\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Main\DrBinaryFile.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Main\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Main\DrFileUtility.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Main\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Main\DrHelper.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Main\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Main\DrNamed.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Main\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Main\DrTypeArray.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Main\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Math\DrMatrix.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Math\DrQuaternion.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Math\DrTransform.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Math\DrVector.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Math\DrCollision.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\Math\DrMathCommons.h">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\DrMainUtility.h">
       <Filter>ソース ファイル\DrFramework\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="Assets\Sauce\DrFrameWork\Utility\DrTypeArray.h">
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\DrMath.h">
       <Filter>ソース ファイル\DrFramework\Utility</Filter>
     </ClInclude>
-    <ClInclude Include="Assets\Sauce\DrFrameWork\Window\DrWindow.h">
+    <ClInclude Include="Assets\Source\DrFrameWork\Utility\DrInterfaceUtility.h">
+      <Filter>ソース ファイル\DrFramework\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Window\DrWindow.h">
       <Filter>ソース ファイル\DrFramework\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\ShaderResource\DrBlendState.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\ShaderResouce\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Source\DrFrameWork\Gfx\BufferResource\DrBuffer.h">
+      <Filter>ソース ファイル\DrFramework\Gfx\BufferResource\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Assets\Sauce\DrFrameWork\Window\DrWindow.cpp">
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\BC.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\BC4BC5.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\BC6HBC7.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\BCDirectCompute.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexCompress.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexCompressGPU.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexConvert.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexD3D11.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexDDS.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexFlipRotate.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexImage.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexMipmaps.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexMisc.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexNormalMaps.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexPMAlpha.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexResize.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexTGA.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexUtil.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\DirectXTexWIC.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\DirectXTex\WICTextureLoader.cpp">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Sauce\Extern\XML\tinyxml2.cpp">
+      <Filter>ソース ファイル\Extern\xna</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Gfx\Device\DrDevice.cpp">
+      <Filter>ソース ファイル\DrFramework\Gfx\Device\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Gfx\Device\DrDeviceContext.cpp">
+      <Filter>ソース ファイル\DrFramework\Gfx\Device\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Gfx\Shader\DrShaderEffect.cpp">
+      <Filter>ソース ファイル\DrFramework\Gfx\Shader\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Gfx\ShaderResource\DrRenderTarget.cpp">
+      <Filter>ソース ファイル\DrFramework\Gfx\ShaderResouce\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Memory\DrTLSFMemoryAllocator.cpp">
+      <Filter>ソース ファイル\DrFramework\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Utility\Main\DrFileUtility.cpp">
+      <Filter>ソース ファイル\DrFramework\Utility\Main\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Utility\Main\DrNamed.cpp">
+      <Filter>ソース ファイル\DrFramework\Utility\Main\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Utility\Main\DrBinaryFile.cpp">
+      <Filter>ソース ファイル\DrFramework\Utility\Main\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Utility\Math\DrTransform.cpp">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Sourse</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Utility\Math\DrVector.cpp">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Sourse</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Utility\Math\DrCollision.cpp">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Sourse</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Utility\Math\DrMatrix.cpp">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Sourse</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Utility\Math\DrQuoternion.cpp">
+      <Filter>ソース ファイル\DrFramework\Utility\Math\Sourse</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Window\DrWindow.cpp">
       <Filter>ソース ファイル\DrFramework\Window</Filter>
     </ClCompile>
-    <ClCompile Include="Assets\Sauce\DrFrameWork\Window\DrEntryPoint_Win.cpp">
-      <Filter>ソース ファイル\DrFramework</Filter>
+    <ClCompile Include="Assets\Source\DrFrameWork\Window\DrEntryPoint_Win.cpp">
+      <Filter>ソース ファイル\DrFramework\Window</Filter>
     </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Gfx\Shader\DrShader.cpp">
+      <Filter>ソース ファイル\DrFramework\Gfx\Shader\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Source\DrFrameWork\Gfx\ShaderResource\DrBlendState.cpp">
+      <Filter>ソース ファイル\DrFramework\Gfx\ShaderResouce\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Sauce\Extern\DirectXTex\DirectXTex.inl">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\DirectXTex\Shaders\Compiled\BC6HEncode_EncodeBlockCS.inc">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\DirectXTex\Shaders\Compiled\BC6HEncode_TryModeG10CS.inc">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\DirectXTex\Shaders\Compiled\BC6HEncode_TryModeLE10CS.inc">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\DirectXTex\Shaders\Compiled\BC7Encode_EncodeBlockCS.inc">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\DirectXTex\Shaders\Compiled\BC7Encode_TryMode02CS.inc">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\DirectXTex\Shaders\Compiled\BC7Encode_TryMode137CS.inc">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\DirectXTex\Shaders\Compiled\BC7Encode_TryMode456CS.inc">
+      <Filter>ソース ファイル\Extern\DirectXTex</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\xna\xnamathconvert.inl">
+      <Filter>ソース ファイル\Extern\XML</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\xna\xnamathmatrix.inl">
+      <Filter>ソース ファイル\Extern\XML</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\xna\xnamathmisc.inl">
+      <Filter>ソース ファイル\Extern\XML</Filter>
+    </None>
+    <None Include="Assets\Sauce\Extern\xna\xnamathvector.inl">
+      <Filter>ソース ファイル\Extern\XML</Filter>
+    </None>
   </ItemGroup>
 </Project>
